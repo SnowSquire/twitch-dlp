@@ -16,6 +16,7 @@
   "scripts": {
     "start": "node ./src/main.ts",
     "build": "pnpx rolldown src/main.ts --file twitch-dlp.js --platform node",
+    "prepare": "pnpm run build",
     "test": "node --experimental-transform-types --test **/*.test.ts",
     "test:watch": "node --experimental-transform-types --test --watch **/*.test.ts",
     "test:types": "tsc --noEmit",
